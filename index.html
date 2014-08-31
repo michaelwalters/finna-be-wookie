@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Weathered &amp; Worn | Coming Soon</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="assets/css/reveal.css">
+		<link rel="stylesheet" href="assets/css/theme/ww.css" id="theme">
+		
+		<script src="assets/js/jquery-2.1.0.min.js"></script>
+        <script src="assets/js/app.js"></script> 
+	</head>
+
+	<body>
+    	
+		<div class="reveal">
+		      
+<div class="wwnav"><p>WEATHERED &amp; WORN &nbsp;&nbsp;|&nbsp;&nbsp; Coming Soon &nbsp;&nbsp;|&nbsp;&nbsp; <a href="#/0/2">Contact</a></p></div>
+			<div class="slides">
+    			<section data-background-transition="fade" data-transitionSpeed="slow" data-background="assets/img/ww-comingsoon-bg1.jpg">
+				<section>
+    				    <img src="assets/img/ww.png" alt="Weathered &amp; Worn" class="logo"><p class="soon">Coming Soon</p>
+				</section>
+				<section data-transitionSpeed="slow" data-background="assets/img/ww-comingsoon-bg2.jpg" data-background-transition="fade" class="smaller">
+				    <h4>Tailored for Time</h4>
+				    <p>Handcrafted Bags, Cases and other things.</p>
+				    <p>Coming Soon.</p>
+				</section>
+				<section data-background="assets/img/ww-comingsoon-bg3.jpg">
+				    <p>Contact Us</p>
+
+                    <div id="form-messages"></div>
+                    <form id="ajax-contact" method="post" action="mailer.php">
+                        <div class="field">
+                            <input type="text" id="name" name="name" placeholder="Name" required>
+                        </div>
+                    
+                        <div class="field">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                    
+                        <div class="field">
+                            <textarea id="message" name="message" placeholder="Message" required></textarea>
+                        </div>
+                    
+                        <div class="field">
+                             <input id="submit" name="submit" type="submit" value="Submit">
+                        </div>
+                    </form>
+                    
+                    
+                    
+                    
+    			</section>
+    			</section>
+			</div>
+
+		</div>
+
+		
+		<script src="assets/lib/js/head.min.js"></script>
+		<script src="assets/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: false,
+				history: true,
+				center: true,
+				mouseWheel: true,
+				rollingLinks: true,
+				minScale: 0.8,
+				maxScale: 1.0,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'concave', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+
+	</body>
+</html>

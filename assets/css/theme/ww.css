@@ -1,0 +1,263 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic);
+/**
+ * Black theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+body {
+  background: #111111;
+  background-color: #111111; }
+
+.reveal {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: normal;
+  letter-spacing: -0.02em;
+  color: #eeeeee; }
+
+::selection {
+  color: white;
+  background: #c4c4c4;
+  text-shadow: none; }
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 20px 0;
+  color: #eeeeee;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  line-height: 0.9em;
+  letter-spacing: -0.03em;
+  text-transform: none;
+  text-shadow: none; }
+
+.reveal h1 {
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
+
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal a:not(.image) {
+  color: #777777;
+  text-decoration: none;
+  -webkit-transition: color 0.15s ease;
+  -moz-transition: color 0.15s ease;
+  -ms-transition: color 0.15s ease;
+  -o-transition: color 0.15s ease;
+  transition: color 0.15s ease; }
+
+.reveal a:not(.image):hover {
+  color: #aaaaaa;
+  text-shadow: none;
+  border: none; }
+
+.reveal .roll span:after {
+  color: #fff;
+  background: #515151; }
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+.reveal section img {
+  margin: 15px 0px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 4px solid #eeeeee;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear; }
+
+.reveal a:hover img {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #777777;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls div.navigate-left,
+.reveal .controls div.navigate-left.enabled {
+  border-right-color: #777777; }
+
+.reveal .controls div.navigate-right,
+.reveal .controls div.navigate-right.enabled {
+  border-left-color: #777777; }
+
+.reveal .controls div.navigate-up,
+.reveal .controls div.navigate-up.enabled {
+  border-bottom-color: #777777; }
+
+.reveal .controls div.navigate-down,
+.reveal .controls div.navigate-down.enabled {
+  border-top-color: #777777; }
+
+.reveal .controls div.navigate-left.enabled:hover {
+  border-right-color: #aaaaaa; }
+
+.reveal .controls div.navigate-right.enabled:hover {
+  border-left-color: #aaaaaa; }
+
+.reveal .controls div.navigate-up.enabled:hover {
+  border-bottom-color: #aaaaaa; }
+
+.reveal .controls div.navigate-down.enabled:hover {
+  border-top-color: #aaaaaa; }
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2); }
+
+.reveal .progress span {
+  background: #777777;
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -o-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+/*********************************************
+ * SLIDE NUMBER
+ *********************************************/
+.reveal .slide-number {
+  color: #777777; }
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+.reveal section img {
+  margin: 15px 0px;
+  background: none;
+  border: none;
+  box-shadow: none;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear; }
+
+.reveal a:hover img {
+  background: none;
+  border-color: none;
+  box-shadow: none; }
+
+/*********************************************
+ * Static
+ *********************************************/
+img.logo {
+  max-width: 250px; }
+
+.wwnav {
+  text-align: center;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  background: rgba(0, 0, 0, 0.4);
+  display: block;
+  float: none;
+  z-index: 20;
+  font-size: .6em;
+  color: #444444;
+  margin: 0px auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center; }
+  .wwnav p {
+    font-size: .5em;
+    padding: 15px 10px 10px 10px; }
+
+.smaller p {
+  font-family: 'Roboto';
+  font-size: 60%;
+  color: #6a6a6a; }
+
+p.soon {
+  font-size: .5em;
+  color: rgba(115, 115, 115, 0.55);
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  margin: 80px 0; }
+
+/*********************************************
+ * FORM
+ *********************************************/
+/* Centre the form within the page */
+form {
+  margin: 0 auto;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  display: inline-block;
+  text-align: center; }
+
+/* Style the text boxes */
+input, textarea {
+  background: rgba(77, 77, 77, 0.3);
+  border: 1px solid rgba(84, 84, 84, 0.49);
+  padding: 10px;
+  margin: 10px;
+  font-size: 0.7em;
+  color: #8e8e8e;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  display: block;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  outline: none;
+  width: 400px; }
+
+/* message box */
+textarea {
+  min-height: 220px; }
+
+input:focus, textarea:focus {
+  border: 1px solid #777777;
+  background: rgba(255, 255, 255, 0.6);
+  color: #333; }
+
+#submit {
+  padding: 10px 20px;
+  background: rgba(171, 171, 171, 0.8);
+  margin-top: 10px;
+  cursor: pointer;
+  width: 120px;
+  float: right;
+  color: #434343; }
+
+#submit:hover {
+  opacity: .5; }
+
+#form-messages {
+  font-family: 'Roboto';
+  font-size: .45em;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 auto;
+  width: 400px;
+  margin-bottom: 10px;
+  line-height: 1.4em; }
+
+#form-messages.success {
+  background-color: rgba(0, 0, 0, 0.49);
+  border: 1px solid rgba(73, 160, 0, 0.71);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px; }
+
+#form-messages.error {
+  background-color: rgba(0, 0, 0, 0.49);
+  border: 1px solid rgba(204, 0, 0, 0.53);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
